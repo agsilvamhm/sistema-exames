@@ -14,8 +14,7 @@ public class Role {
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "role")
     private Set<UsuarioRole> usuarioRoles = new HashSet<>();
 
-    public Role() {
-    }
+    public Role() {}
 
     public Long getId() {
         return id;
